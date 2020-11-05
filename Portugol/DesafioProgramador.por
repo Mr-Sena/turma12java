@@ -109,9 +109,14 @@ programa
 				contador = 0
 			} senao se (resposta == 'N' ou resposta == 'n') {
 				pare
-			}
+	 		}
 				
 		}
+		para(contador = 0; contador < 30; contador++) {
+			codigos[contador] = "G6-" + (contador + 1)
+			escreva(codigos[contador], "\t\t", nomes[contador], "\t\t ", notas[contador],"\t\t", emails[contador], "\n")
+		}
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -119,7 +124,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 4027; 
+ * @POSICAO-CURSOR = 0; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
